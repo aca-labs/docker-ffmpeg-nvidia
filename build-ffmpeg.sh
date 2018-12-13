@@ -1,5 +1,10 @@
 #!/bin/bash
 
+git clone --depth=1 https://git.videolan.org/git/ffmpeg/nv-codec-headers.git
+cd nv-codec-headers
+make
+make install
+
 git clone https://github.com/ffmpeg/ffmpeg.git
 cd ffmpeg
 git checkout release/4.1
